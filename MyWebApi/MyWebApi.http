@@ -1,0 +1,45 @@
+@MyWebApi_HostAddress = http://localhost:5211
+
+GET {{MyWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{MyWebApi_HostAddress}}/CallMessage/
+Accept: application/json
+
+### Get people
+
+GET {{MyWebApi_HostAddress}}/people/
+Accept: application/json
+
+### Add people
+
+POST {{MyWebApi_HostAddress}}/people/
+content-Type: application/json
+{
+    "Name": "khan212"
+}
+
+### Find people
+
+GET {{MyWebApi_HostAddress}}/people/1
+Accept: application/json
+
+### Update people
+
+PUT {{MyWebApi_HostAddress}}/people/
+Accept: application/json
+{
+      "id": 1,
+    "name": "Kaaaaz"
+}
+### Update people
+Delete {{MyWebApi_HostAddress}}/people/11
+Accept: application/json
+
+
+
+
+
+
